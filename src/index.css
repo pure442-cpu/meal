@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3c5500;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4f6f00;
+  --color-on-primary-container: #c9f17c;
+  --color-inverse-primary: #add463;
+  
+  --color-secondary: #596338;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dde8b2;
+  --color-on-secondary-container: #5f693d;
+
+  --color-tertiary: #5a4a43;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #73625a;
+  --color-on-tertiary-container: #f7dfd5;
+
+  --color-background: #fcf9f1;
+  --color-on-background: #1c1c17;
+
+  --color-surface: #fcf9f1;
+  --color-on-surface: #1c1c17;
+  --color-surface-dim: #dcdad2;
+  --color-surface-bright: #fcf9f1;
+  --color-surface-variant: #e5e2db;
+  --color-on-surface-variant: #444939;
+
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3eb;
+  --color-surface-container: #f1eee6;
+  --color-surface-container-high: #ebe8e0;
+  --color-surface-container-highest: #e5e2db;
+  
+  --color-outline: #747967;
+  --color-outline-variant: #c4c9b4;
+  
+  --font-sans: "GmarketSans", "Noto Sans KR", "Plus Jakarta Sans", sans-serif;
+  --font-gmarket: "GmarketSans", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+  }
+}
+
+.custom-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 30px -5px rgba(60, 85, 0, 0.08);
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom transitions and styles */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 24px;
+}
